@@ -1,6 +1,5 @@
 import { Bottombar } from "@/components/Bottombar";
 import Navbar from "@/components/Navbar";
-import { SmoothCursor } from "@/components/ui/smooth-cursor";
 import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router"
 
@@ -15,7 +14,6 @@ function ScrollToTop() {
 function MainLayout() {
   return (
     <>
-      <SmoothCursor />
       <ScrollToTop />
       <div className="sticky top-0 z-50">
         <Navbar />

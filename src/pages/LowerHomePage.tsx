@@ -7,7 +7,6 @@ import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button
 import { OrbitingCirclesAnimation } from "@/components/ui/orbitAnimation";
 import { PointerAnimation } from "@/components/ui/PointerAnimation";
 import { ScrollVelocityContainer, ScrollVelocityRow } from "@/components/ui/scroll-based-velocity";
-import { TextAnimate } from "@/components/ui/text-animate";
 import { cn } from "@/lib/utils";
 
 export const LowerHomePage = () => {
@@ -35,17 +34,17 @@ export const LowerHomePage = () => {
             Unlimited Anime, Zero Cost
           </AuroraText>
           <div className="text-lg sm:text-xl md:text-2xl text-gray-700 dark:text-gray-300 font-medium leading-relaxed pb-2">
-            <TextAnimate animation="blurInUp" by="character" once duration={2}>
+            <BlurFade delay={0.2} inView>
               Dive into a vast world of anime, handpicked for true fans
-            </TextAnimate>
-            <TextAnimate animation="blurInUp" by="character" once delay={2} duration={2}>
+            </BlurFade>
+            <BlurFade delay={0.4} inView>
               No subscriptions, no limits, just pure entertainment
-            </TextAnimate>
+            </BlurFade>
           </div>
           <div>
-          <InteractiveHoverButton>
-            <p className="flex gap text-center items-center">Get Started</p>
-          </InteractiveHoverButton>
+            <InteractiveHoverButton>
+              <p className="flex gap text-center items-center">Get Started</p>
+            </InteractiveHoverButton>
           </div>
         </div>
       </div>
@@ -71,8 +70,6 @@ export const LowerHomePage = () => {
             Phillic
           </ScrollVelocityRow>
         </ScrollVelocityContainer>
-        <div className="from-background pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-linear-to-r"></div>
-        <div className="from-background pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-linear-to-l"></div>
       </div>
     </section>
   );

@@ -1,6 +1,5 @@
 html,
 body {
-    cursor: none !important;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -8,15 +7,6 @@ body {
     overflow-x: hidden;
     overflow-y: visible;
 }
-
-button,
-a,
-select,
-svg,
-canvas {
-    cursor: none;
-}
-
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
