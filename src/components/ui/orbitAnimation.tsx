@@ -7,12 +7,12 @@ export function OrbitingCirclesAnimation() {
         <Icons.avatar />
         <Icons.pikachu />
         <Icons.avatar1 />
-        <Icons.bulbasaur />
+        <Icons.psyduck />
         <Icons.avatar4 />
       </OrbitingCircles>
       <OrbitingCircles iconSize={30} radius={100} reverse speed={2}>
         <Icons.avatar2 />
-        <Icons.squirtle />
+        <Icons.jigglypuff />
         <Icons.avatar3 />
         <Icons.eevee />
       </OrbitingCircles>
@@ -29,17 +29,17 @@ const Icons = {
       className="rounded-md object-contain"
     />
   ),
-  bulbasaur: () => (
+  jigglypuff: () => (
     <img
-      src="/PokemonIcons/bulbasaur.png"
+      src="/PokemonIcons/jigglypuff.png"
       width={100}
       height={100}
       className="rounded-md object-contain"
     />
   ),
-  squirtle: () => (
+  psyduck: () => (
     <img
-      src="/PokemonIcons/squirtle.png"
+      src="/PokemonIcons/psyduck.png"
       width={100}
       height={100}
       className="rounded-md object-contain"
@@ -48,14 +48,6 @@ const Icons = {
   eevee: () => (
     <img
       src="/PokemonIcons/eevee.png"
-      width={100}
-      height={100}
-      className="rounded-md object-contain"
-    />
-  ),
-  snorlax: () => (
-    <img
-      src="/PokemonIcons/snorlax.png"
       width={100}
       height={100}
       className="rounded-md object-contain"

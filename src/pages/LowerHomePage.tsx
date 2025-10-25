@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 
 export const LowerHomePage = () => {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pb-8 ">
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pb-8">
       <DotPattern />
       <div className="flex flex-col pt-30 md:flex-row items-center justify-center w-full max-w-6xl gap-12 md:gap-20">
         <div className="relative shrink-0 w-64 sm:w-80 md:w-96 lg:w-md animate-float">
