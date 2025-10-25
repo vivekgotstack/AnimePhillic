@@ -5,19 +5,18 @@ import { NavLink } from "react-router"
 
 export const Bottombar = () => {
   return (
-    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 w-[90%] max-w-md z-50 flex justify-center">
-      <div className="fixed bottom-0 left-1/2 -translate-x-1/2 flex justify-center">
-        <div className="h-[59px] w-48 bg-white/10 dark:bg-black/10 backdrop-blur-xs rounded-xl" />
-      </div>
-
+    <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 w-full max-w-md flex justify-center z-50">
       <BlurFade delay={0.25} inView>
-        <Dock className="relative bg-white/10 dark:bg-black/10 rounded-xl">
-          <DockIcon><NavLink to='/'><Home /></NavLink></DockIcon>
+        <Dock className="relative shadow-black shadow-md bg-white/70 dark:shadow-white dark:shadow-sm dark:bg-black/80 dark:text-gray-300 border-black/10 dark:border-white/10 rounded-xl">
+          <DockIcon>
+            <NavLink to="/"><Home /></NavLink>
+          </DockIcon>
           <DockIcon><Search /></DockIcon>
           <DockIcon><Settings /></DockIcon>
         </Dock>
       </BlurFade>
     </div>
+
   )
 }
 

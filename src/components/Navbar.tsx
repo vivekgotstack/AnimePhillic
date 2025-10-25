@@ -4,7 +4,7 @@ import { LineShadowText } from "./ui/line-shadow-text";
 
 export default function Navbar() {
   return (
-    <div className="sticky top-0 z-50 backdrop-blur-md bg-white/80 shadow-black shadow-md dark:bg-linear-to-r dark:from-black dark:via-gray-950 dark:to-gray-900 dark:text-gray-300 dark:shadow-[0_6px_40px_rgba(255,255,255,0.6)]">
+    <div className="sticky top-0 z-50 bg-white/80 shadow-black shadow-md dark:shadow-white/80 dark:shadow-md dark:bg-linear-to-r dark:from-[#0a0a0a] dark:via-[#1a1a1a] dark:to-[#232323] dark:text-gray-300">
       <nav className="w-full flex flex-col sm:flex-row items-center justify-between px-4 py-3 md:px-8 lg:px-10 md:py-4 
         shadow-sm z-50 backdrop-blur-xl bg-white/30 dark:bg-black/30 border-b border-white/10 dark:border-black/10">
         <h1 className="text-lg flex flex-col px-4 leading-none font-semibold tracking-tighter text-balance sm:text-lg md:text-xl lg:text-xl">
