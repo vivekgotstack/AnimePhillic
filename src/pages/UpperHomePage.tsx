@@ -8,11 +8,7 @@ export const UpperHomePage = () => {
     const [shadowColor, setShadowColor] = useState("black");
     const texts = [
         "Epic",
-        "Hero",
         "Prime",
-        "Fierce",
-        "Mighty",
-        "Brave",
         "Bold",
         "Glory",
         "Vivid",
@@ -21,7 +17,9 @@ export const UpperHomePage = () => {
         "Noble",
         "Swift",
         "True",
-        "Sharp"
+        "Sharp",
+        "Nova",
+        "Pulse"
     ];
 
     useEffect(() => {
@@ -39,7 +37,7 @@ export const UpperHomePage = () => {
     }, []);
 
     return (
-        <BlurFade delay={0.5} className="bg-background relative flex h-screen w-full flex-col gap-10 items-center justify-center overflow-hidden rounded-lg border">
+        <BlurFade delay={0.5} className="bg-background relative flex h-[70vh] md:h-screen w-full flex-col gap-10 items-center justify-center overflow-hidden rounded-lg border">
             <h1 className="text-6xl leading-none font-semibold tracking-tighter text-balance sm:text-7xl md:text-8xl lg:text-9xl">
                 Anime
                 <LineShadowText className="italic" shadowColor={shadowColor}>
