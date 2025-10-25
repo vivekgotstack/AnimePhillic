@@ -133,6 +133,7 @@ export const MorphingText: React.FC<MorphingTextProps> = ({ texts, className }) 
       "relative mx-auto h-auto w-full max-w-3xl text-center font-sans text-[2.5rem] md:text-[3rem] lg:text-[4rem] xl:text-[5rem] leading-none font-bold filter-[url(#threshold)_blur(0.6px)]",
       className
     )}
+    style={{ fontFamily: "Playfair" }}
   >
     <Texts texts={texts} />
     <SvgFilters />

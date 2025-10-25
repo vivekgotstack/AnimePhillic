@@ -10,17 +10,18 @@ export const UpperHomePage = () => {
         "Epic",
         "Prime",
         "Bold",
-        "Glory",
+        "Ace",
         "Vivid",
         "Royal",
         "Valor",
-        "Noble",
-        "Swift",
+        "Keen",
         "True",
         "Sharp",
-        "Nova",
-        "Pulse"
-    ];
+        "Elite",
+        "Rare",
+        "Pure",
+        "Stark"
+    ];    
 
     useEffect(() => {
         const updateShadow = () => {
@@ -45,14 +46,14 @@ export const UpperHomePage = () => {
                 </LineShadowText>
             </h1>
             <div className="mt-4 w-full text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl px-4 leading-snug flex justify-center flex-wrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                <span style={{ fontFamily: "'Great Vibes', cursive" }}>The&nbsp;</span>
+                <span style={{ fontFamily: "Great Vibes, cursive" }}>The&nbsp;</span>
                 <span
-                    className="tracking-tighter font-semibold inline-flex justify-center p-2 -translate-y-4"
+                    className="tracking-tighter font-semibold inline-flex justify-center p-2 -translate-y-2"
                     style={{ minWidth: `${Math.max(...texts.map(t => t.length))}ch` }}
                 >
                     <MorphingText texts={texts} />
                 </span>
-                <span style={{ fontFamily: "'Great Vibes', cursive" }}>&nbsp;Destination to Watch, Discover, and Live Anime Like Never Before</span>
+                <span style={{ fontFamily: "Great Vibes, cursive" }}>&nbsp;Destination to Watch, Discover, and Live Anime Like Never Before</span>
             </div>
 
             <RetroGrid />
