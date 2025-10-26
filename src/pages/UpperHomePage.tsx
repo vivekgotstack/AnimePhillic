@@ -7,21 +7,22 @@ import { MorphingText } from "@/components/ui/morphing-text";
 export const UpperHomePage = () => {
     const [shadowColor, setShadowColor] = useState("black");
     const texts = [
-        "Epic",
+        "Noble",
+        "Grand",
+        "Proud",
+        "Alpha",
+        "Tough",
+        "Clean",
         "Prime",
-        "Bold",
-        "Ace",
-        "Vivid",
+        "Lucid",
         "Royal",
-        "Valor",
-        "Keen",
-        "True",
-        "Sharp",
-        "Elite",
-        "Rare",
-        "Pure",
-        "Stark"
-    ];    
+        "Omega",
+        "Smart",
+        "Power",
+        "Grace",
+        "Honor",
+    ];
+    
 
     useEffect(() => {
         const updateShadow = () => {
@@ -46,14 +47,14 @@ export const UpperHomePage = () => {
                 </LineShadowText>
             </h1>
             <div className="mt-4 w-full text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl px-4 leading-snug flex justify-center flex-wrap" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-                <span style={{ fontFamily: "Great Vibes, cursive" }}>The&nbsp;</span>
+                <span style={{ fontFamily: "Dancing Script, cursive" }}>The&nbsp;</span>
                 <span
-                    className="tracking-tighter font-semibold inline-flex justify-center p-2 -translate-y-2"
+                    className="tracking-tighter font-semibold inline-flex justify-center p-2 -translate-y-1 sm:translate-y-0 md:translate-y-0"
                     style={{ minWidth: `${Math.max(...texts.map(t => t.length))}ch` }}
                 >
                     <MorphingText texts={texts} />
                 </span>
-                <span style={{ fontFamily: "Great Vibes, cursive" }}>&nbsp;Destination to Watch, Discover, and Live Anime Like Never Before</span>
+                <span style={{ fontFamily: "Dancing Script, cursive" }}>&nbsp;Destination to Watch, Discover, and Live Anime Like Never Before</span>
             </div>
 
             <RetroGrid />
