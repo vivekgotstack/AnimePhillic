@@ -6,14 +6,14 @@ export function OrbitingCirclesAnimation() {
       <OrbitingCircles iconSize={40}>
         <Icons.avatar />
         <Icons.pikachu />
-        <Icons.avatar1 />
+        <Icons.avatar3 />
         <Icons.psyduck />
         <Icons.avatar4 />
       </OrbitingCircles>
       <OrbitingCircles iconSize={30} radius={100} reverse speed={2}>
         <Icons.avatar2 />
         <Icons.jigglypuff />
-        <Icons.avatar3 />
+        <Icons.avatar1 />
         <Icons.eevee />
       </OrbitingCircles>
     </>
