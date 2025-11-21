@@ -1,1 +1,1 @@
-## It's an Anime platform
+## A contribution to Anime Community
