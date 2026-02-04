@@ -1,4 +1,5 @@
-import { LowerHomePage } from "./LowerHomePage";
+import LowererHomePage from "./LowerHomePage";
+import { LowerHomePage } from "./MiddleHomePage";
 import { UpperHomePage } from "./UpperHomePage";
 
 export default function HomePage() {
@@ -6,6 +7,7 @@ export default function HomePage() {
     <>
       <UpperHomePage />
       <LowerHomePage />
+      <LowererHomePage/>
     </>
   )
 }

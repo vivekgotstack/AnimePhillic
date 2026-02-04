@@ -1,4 +1,6 @@
 import MainLayout from "@/layouts/MainLayout";
+import { ProtectedLayout } from "@/layouts/ProtectedLayout";
+import { AuthPage } from "@/pages/AuthPages/AuthPage";
 import HomePage from "@/pages/HomePage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -11,34 +13,18 @@ const router = createBrowserRouter([
                 path: "/",
                 Component: HomePage
             },
-            // {
-            //     path: "/flights",
-            //     Component: Flight
-            // },
-            // {
-            //     path: "/hotel",
-            //     Component: Hotel
-            // },
-            // {
-            //     path: "/trains",
-            //     Component: Trains
-            // },
-            // {
-            //     path: "/cabs",
-            //     Component: Cabs
-            // },
-            // {
-            //     path: "/bus",
-            //     Component: Bus
-            // },
-            // {
-            //     path: "/holidays",
-            //     Component: Holidays
-            // },
-            // {
-            //     path: "/booking",
-            //     Component: Booking,
-            // },
+            {
+                path: "/auth",
+                Component: AuthPage
+            },
+            {
+                Component: ProtectedLayout,
+                children: [
+                //   { path: "/trains", Component: Trains },
+                //   { path: "/cabs", Component: Cabs },
+                //   { path: "/booking", Component: Booking },
+                ],
+              },
             {
                 path: "*",
                 Component: HomePage,

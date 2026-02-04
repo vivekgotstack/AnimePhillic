@@ -19,7 +19,7 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Contact Us</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <NavigationMenuLink asChild><a href="https://x.com/meowsingh">X</a></NavigationMenuLink>
+                  <NavigationMenuLink asChild><a href="https://x.com/vivekgotstack">X</a></NavigationMenuLink>
                   <NavigationMenuLink asChild><a href="https://www.linkedin.com/in/randomvivek">LinkedIn</a></NavigationMenuLink>
                   <NavigationMenuLink asChild><a href="https://www.instagram.com/randomvivek">Instagram</a></NavigationMenuLink>
                 </NavigationMenuContent>
