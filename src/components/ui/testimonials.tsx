@@ -46,9 +46,16 @@ export function TestimonialBlock() {
             discover, and enjoy anime without the usual noise.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {TESTIMONIALS.map(({ name, image, role, quote }, key) => (
-            <Card key={key} className="border-0 bg-transparent shadow-none">
+            <Card
+            key={key}
+            className="
+              border-0 bg-transparent shadow-none
+              md:last:col-span-2 md:last:flex md:last:justify-center
+              lg:last:col-span-1 lg:last:flex-none
+            "
+          >          
               <CardContent className="p-0 text-center">
                 <Avatar className="mx-auto mb-4 h-20 w-20">
                   <AvatarImage src={image} alt={`${name} image`} />

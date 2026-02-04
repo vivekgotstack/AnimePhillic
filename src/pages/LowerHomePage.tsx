@@ -49,7 +49,7 @@ export default function LowererHomePage() {
             </div>
 
             <BlurFade
-                className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl mx-auto gap-8 pt-16"
+                className="relative flex flex-col md:flex-row items-center justify-center w-full max-w-6xl mx-auto gap-8 pt-16"
                 delay={0.6}
                 inView
             >
@@ -57,7 +57,7 @@ export default function LowererHomePage() {
             </BlurFade>
 
             <BlurFade
-                className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl mx-auto gap-8 pt-16"
+                className="relative flex flex-col md:flex-row items-center justify-center w-full max-w-6xl mx-auto gap-8 pt-16"
                 delay={0.6}
                 inView
             >
